@@ -1,3 +1,10 @@
+## 1.0.0 (2023-02-15)
+
+
+### Features
+
+* initial version ([147223c](https://github.com/entelecheia/jupyter-book-template/commit/147223c71d3bc9ae2dba472043ee3153b1657e27))
+
 ## [1.0.6](https://github.com/entelecheia/base-template/compare/v1.0.5...v1.0.6) (2023-02-15)
 
 
