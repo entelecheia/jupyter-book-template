@@ -10,13 +10,13 @@ name: Lint
 # Start the job on all push #
 #############################
 on:
+  workflow_call:
+  workflow_dispatch:
   push:
     branches-ignore: [main]
     # Remove the line above to run when pushing to main
   pull_request:
     branches: main
-  workflow_call:
-  workflow_dispatch:
 
 ###############
 # Set the Job #

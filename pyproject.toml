@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "jupyter-book-template"
+version = "1.0.0"
+description = "A Template for Jupyter-Book with CI/CD workflows"
+authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "jupyter_book_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+jupyter-book = "^0.13"
+cookiecutter = "^2.0"
+matplotlib = "^3.4"
+numpy = "^1.20"
+ghp-import = "^2.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
