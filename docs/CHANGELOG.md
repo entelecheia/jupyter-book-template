@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.1...v1.0.2) (2023-02-15)
+
+
+### Bug Fixes
+
+* release emoji ([b3ae41b](https://github.com/entelecheia/jupyter-book-template/commit/b3ae41b2fc840c0fbdeb82d144fcca9fc8a88b89))
+
 ## [1.0.1](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.0...v1.0.1) (2023-02-15)
 
 
