@@ -58,11 +58,17 @@
       }
     ],
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i \"s/version = \\\".*\\\"/version = \\\"${nextRelease.version}\\\"/g\" pyproject.toml"
+      }
+    ],
+    [
       "@semantic-release/github",
       {
         "assets": [
           [
-            "docs/pdfs"
+            "docs/CHANGELOG.md"
           ]
         ]
       }
@@ -73,7 +79,8 @@
         "assets": [
           "docs/CHANGELOG.md",
           "package.json",
-          "package-lock.json"
+          "package-lock.json",
+          "pyproject.toml"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
