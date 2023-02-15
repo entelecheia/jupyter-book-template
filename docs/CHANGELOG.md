@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.0...v1.0.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* pyproject version injection test ([6d4a553](https://github.com/entelecheia/jupyter-book-template/commit/6d4a553bc427d247b8bce00098eb6ad3b10a9cc0))
+
 ## 1.0.0 (2023-02-15)
 
 
