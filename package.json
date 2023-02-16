@@ -2,6 +2,13 @@
     "name": "jupyter-book-template",
     "version": "1.0.3",
     "description": "A Template for Jupyter-Book with CI/CD workflows",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/entelecheia/jupyter-book-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/entelecheia/jupyter-book-templat/issues"
+    },
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.2",
         "@semantic-release/commit-analyzer": "^9.0.2",
