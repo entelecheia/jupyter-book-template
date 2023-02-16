@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.2...v1.0.3) (2023-02-16)
+
+
+### Bug Fixes
+
+* simplify package.json, add makefile, use of poetry ([9345b40](https://github.com/entelecheia/jupyter-book-template/commit/9345b40a72be9c73aa257062f125dc922c2b885c))
+
 ## [1.0.2](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.1...v1.0.2) (2023-02-15)
 
 
