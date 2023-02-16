@@ -5,7 +5,6 @@ description = "A Template for Jupyter-Book with CI/CD workflows"
 authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
 license = "CC-BY-4.0"
 readme = "README.md"
-packages = [{ include = "jupyter_book_template" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
