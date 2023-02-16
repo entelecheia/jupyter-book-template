@@ -5,18 +5,32 @@ description = "A Template for Jupyter-Book with CI/CD workflows"
 authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "jupyter_book_template"}]
+packages = [{ include = "jupyter_book_template" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
-[tool.poetry.dev-dependencies]
-jupyter-book = "^0.13"
-cookiecutter = "^2.0"
-matplotlib = "^3.4"
-numpy = "^1.20"
+[tool.poetry.group.release.dependencies]
+python-semantic-release = "^7.33.1"
 ghp-import = "^2.1.0"
+
+[tool.poetry.group.book.dependencies]
+jupyter-book = "^0.13.2"
+cookiecutter = "^2.1.1"
+matplotlib = "^3.7.0"
+numpy = "^1.24.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+branch = "main"
+version_variable = "src/__init__.py:__version__"
+version_toml = "pyproject.toml:tool.poetry.version"
+version_source = "tag"
+commit_version_number = true                        # required for version_source = "tag"
+tag_commit = true
+upload_to_pypi = false
+upload_to_release = false
+hvcs = "github"                                     # hosting version control system, gitlab is also supported
