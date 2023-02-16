@@ -2,23 +2,6 @@
     "name": "jupyter-book-template",
     "version": "1.0.2",
     "description": "A Template for Jupyter-Book with CI/CD workflows",
-    "author": "entelecheia",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/entelecheia/jupyter-book-template.git"
-    },
-    "keywords": [
-        "GitHub",
-        "Actions",
-        "Template",
-        "CI",
-        "CD"
-    ],
-    "bugs": {
-        "url": "https://github.com/entelecheia/jupyter-book-templat/issues"
-    },
-    "homepage": "https://github.com/entelecheia/jupyter-book-templat#readme",
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.2",
         "@semantic-release/commit-analyzer": "^9.0.2",
