@@ -61,6 +61,11 @@ clean-book-build: ## remove output files from mkdocs
 
 clean: clean-book-build ## run all clean commands
 
+##@ Release
+
+verify-release: ## verify release
+	@npx semantic-release --verfiy-release
+
 ##@ Setup
 
 install-deps: ## install dependencies
@@ -68,3 +73,6 @@ install-deps: ## install dependencies
 
 install-linters: ## install linters
 	@poetry install --with lint
+
+install-npm-deps: ## install npm dependencies
+	@npm install
