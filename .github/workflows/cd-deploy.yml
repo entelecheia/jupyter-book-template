@@ -1,5 +1,5 @@
 ---
-name: Deploy
+name: deploy-book
 
 on:
   workflow_call:

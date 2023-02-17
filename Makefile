@@ -19,6 +19,27 @@
 help:  ## Display this help
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
+##@ Formatting
+
+.PHONY: format-black
+format-black: ## black (code formatter)
+	@poetry run black .
+
+.PHONY: format
+format: format-black ## run all formatters
+
+##@ Linting
+
+.PHONY: lint-black
+lint-black: ## black in linting mode
+	@poetry run black --check --diff .
+
+.PHONY: lint-isort
+lint-isort: ## isort in linting mode
+	@poetry run isort --check --diff .
+
+lint: lint-black ## run all linters
+
 ##@ Jupyter-Book
 
 book-build: ## build documentation locally
@@ -40,24 +61,10 @@ clean-book-build: ## remove output files from mkdocs
 
 clean: clean-book-build ## run all clean commands
 
-##@ Releases
-
-current-version: ## returns the current version
-	@poetry run semantic-release print-version --current
-
-next-version: ## returns the next version
-	@semantic-release print-version --next
-
-current-changelog: ## returns the current changelog
-	@semantic-release changelog --released
-
-next-changelog: ## returns the next changelog
-	@semantic-release changelog --unreleased
-
-publish-noop: ## publish command
-	@semantic-release publish --noop
-
 ##@ Setup
 
 install-deps: ## install dependencies
 	@poetry install --no-root
+
+install-linters: ## install linters
+	@poetry install --with lint
