@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jupyter-book-template"
-version = "1.0.3"
+version = "1.0.4"
 description = "A Template for Jupyter-Book with CI/CD workflows"
 authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
 license = "CC-BY-4.0"
@@ -17,7 +17,7 @@ numpy = "^1.24.2"
 ghp-import = "^2.1.0"
 
 [tool.poetry.group.lint.dependencies]
-black = { extras = ["jupyter"], version = "^23.1.0" }
+black = { extras = ["jupyter"], version = "1.0.4" }
 isort = "^5.12.0"
 
 [build-system]

@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.3...v1.0.4) (2023-02-17)
+
+
+### Bug Fixes
+
+* **config:** add lint, update ci ([8dad489](https://github.com/entelecheia/jupyter-book-template/commit/8dad4898948fe0686b5735d3aee03232b22f7e36))
+
 ## [1.0.3](https://github.com/entelecheia/jupyter-book-template/compare/v1.0.2...v1.0.3) (2023-02-16)
 
 

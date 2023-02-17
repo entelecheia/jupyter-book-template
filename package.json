@@ -1,6 +1,6 @@
 {
     "name": "jupyter-book-template",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A Template for Jupyter-Book with CI/CD workflows",
     "repository": {
         "type": "git",
